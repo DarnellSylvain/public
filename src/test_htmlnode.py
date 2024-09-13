@@ -32,7 +32,7 @@ class TestHTMLNode(unittest.TestCase):
         self.assertEqual(node.to_html(), "<p>This is a paragraph of text.</p>")
 
     def test_to_html_no_props(self):
-        node3 = LeafNode(value="This is text without a tag")
+        node3 = LeafNode(None, value="This is text without a tag")
         self.assertEqual(node3.to_html(), "This is text without a tag")
 
     def test_to_html_with_props(self):
